@@ -2,17 +2,18 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import React from "react";
 import "./App.css";
-import CampsitesList from "./features/campsites/CampsitesList";
-import { CAMPSITES } from "./app/shared/CAMPSITES";
+import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <CampsitesList campsite={CAMPSITES[0]} />
-      <Footer></Footer>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Header />
+            <CampsitesDirectoryPage />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
+
